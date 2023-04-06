@@ -1,0 +1,55 @@
+
+.history-containr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-container h2 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.search-history-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-history-item {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: 5px solid rgb(221, 164, 58);
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+
+.search-history-item:hover {
+    border-left: 18px solid rgb(221, 164, 58);
+    cursor: pointer;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button button {
+    all: none;
+    outline: none;
+    border: none;
+    color: rgb(21, 92, 120);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

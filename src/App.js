@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react';
+import {
+  Header,
+  History,
+  Home,
+  Detail
+} from './components'
 
-function App() {
+
+export const config = {
+  baseUrl: 'http://www.omdbapi.com/?apikey=57ed164d&'
+}
+
+const App = () => {
+
+  const historyObject = {
+    query: "",
+    date: "",
+    time: "",
+  }
+  const [history, setHistory] = useState([])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" exact element={<Home setHistory={setHistory} />} />
+        <Route path="/detail/:movieId" element={<Detail />} />
+        <Route path="/history" element={<History history={history} />} />
+        <Route path="*" element={<div>Page Not Found</div>} />
+      </Routes>
     </div>
   );
 }

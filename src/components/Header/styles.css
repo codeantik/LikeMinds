@@ -1,0 +1,41 @@
+
+
+a {
+    text-decoration: none;
+}
+
+.header-container {
+    height: 80px;
+    background-color: rgb(161, 161, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h2 {
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3.5px;
+}
+
+.header-links {
+    display: flex;
+    margin: 5px;
+}
+
+.header-links li {
+    list-style: none;
+    padding: 5px 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-links a {
+    transition: all 0.3s ease;
+}
+
+.header-links a:hover {
+    color: white;
+}
