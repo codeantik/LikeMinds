@@ -10,7 +10,7 @@ import {
 
 
 export const config = {
-  baseUrl: 'http://www.omdbapi.com/?apikey=57ed164d&'
+  baseUrl: 'https://www.omdbapi.com/?apikey=57ed164d&'
 }
 
 const App = () => {
